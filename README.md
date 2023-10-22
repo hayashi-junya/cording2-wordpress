@@ -1,4 +1,4 @@
-# WordPress の開発環境
+# 研修③のWordPress化
 
 ## 概要
 dockerにて、
