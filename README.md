@@ -1,6 +1,6 @@
 # 研修③のWordPress化
 
-## 概要desu
+## 概要をやっぱり変更
 dockerにて、
 - WordPressコンテナ
 - DBコンテナ
