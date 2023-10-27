@@ -1,0 +1,13 @@
+.c-section-title {
+  width: 200px;
+  white-space: nowrap;
+  font-size: 40px;
+  color: #dd1b57;
+  line-height: 1;
+} 
+
+@media screen and (max-width: 767px) {
+  .c-section-title {
+    font-size: 32px;
+  }
+}

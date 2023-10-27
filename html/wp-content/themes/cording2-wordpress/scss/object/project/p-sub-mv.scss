@@ -1,0 +1,38 @@
+.p-sub-mv {
+  width: 100%;
+}
+
+.p-sub-mv__container {
+  display: flex;
+  height: 190px;
+  background-image: url(../img/pc_bg_mv.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-sub-mv__title {
+  text-align: center;
+  text-shadow: 0 4px 6px rgb(0 0 0 / 25%);
+}
+
+.p-sub-mv__maintitle {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .p-sub-mv {
+    color: #ef90a4;
+  }
+
+  .p-sub-mv__maintitle {
+    font-size: 28px;
+  }
+  .p-sub-mv__container {
+    height: 160px;
+  }
+}

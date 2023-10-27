@@ -1,0 +1,60 @@
+.c-toggle-btn{
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .c-toggle-btn {
+    display: block;
+    z-index: 15;
+    background-color: #dd1b57;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .c-toggle-btn:hover {
+    opacity: 1;
+  }
+
+  .c-toggle-btn span {
+    width: 50%;
+    height: 2px;
+    right: 15px;
+    border-radius: 4px;
+    background-color: white;
+    position: absolute;
+    transition: 0.3s;
+  }
+
+  .c-toggle-btn span:nth-child(1) {
+    top: 20px;
+  }
+
+  .c-toggle-btn span:nth-child(2) {
+    top: 30px;
+  }
+  .c-toggle-btn span:nth-child(3) {
+    top: 40px;
+  }
+  .open .c-toggle-btn span:nth-child(1) {
+    top: 30px;
+    background: white;
+    transform: rotate(45deg);
+  }
+
+  .open .c-toggle-btn span:nth-child(2) {
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  .open .c-toggle-btn span:nth-child(3) {
+    top: 30px;
+    background: white;
+    transform: rotate(-45deg);
+  }
+}
