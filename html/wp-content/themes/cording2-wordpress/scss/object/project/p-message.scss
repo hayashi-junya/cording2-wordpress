@@ -1,5 +1,8 @@
 .p-message {
   margin-top: 60px;
+  @include mq("sp"){
+    margin-top: 30px;
+  }
 }
 
 .p-message__inner {
@@ -11,9 +14,13 @@
 .p-message__title {
   text-align: center;
   font-size: 40px;
-  color: #dd1b57;
+  font-weight: bold;
+  color: $base-color;
   margin-bottom: 26px;
   letter-spacing: 0.05em;
+  @include mq("sp"){
+    font-size: 24px;
+  }
 }
 
 .p-message__sub-title {
@@ -21,11 +28,14 @@
   font-size: 18px;
   margin-bottom: 40px;
   letter-spacing: 0.05em;
+  @include mq("sp"){
+    font-size: 15px;
+  }
 }
 
 .p-message__box__img {
   float: left;
-  margin: 0 25px 0px 0;
+  margin: 0 25px 20px 0;
   width: 100px;
 }
 
@@ -33,6 +43,10 @@
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.05em;
+  padding-right:20px;
+  @include mq("sp"){
+    font-size: 15px;
+  }
 }
 
 .p-message__box__description-link {
@@ -41,36 +55,16 @@
 
 .p-message__under-img-wrapper {
   margin: 80px auto 100px auto;
-  max-width: 1160px;
+  max-width: 1140px;
   padding: 0 20px;
+  @include mq("sp"){
+    margin: 50px auto 50px auto;
+  }
 }
 
 .p-message__under-img {
   width: 100%;
-}
-
-@media screen and (max-width: 767px) {
-  .p-message {
-    margin-top: 30px;
-  }
-
-  .p-message__title {
-    font-size: 24px;
-  }
-
-  .p-message__sub-title {
-    font-size: 15px;
-  }
-
-  .p-message__box__description {
-    font-size: 15px;
-    letter-spacing: 0.05em;
-  }
-
-  .p-message__under-img-wrapper {
-    margin: 50px 0 50px 0;
-  }
-  .p-message__under-img {
+  @include mq("sp"){
     height: 260px;
   }
 }

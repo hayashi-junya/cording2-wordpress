@@ -1,5 +1,6 @@
 <?php wp_footer(); ?>
     <footer class="l-footer">
+      <div class="l-inner">
     <nav class="l-footer__nav">
         <ul class="l-footer__list">
           <li class="l-footer__item">
@@ -14,6 +15,7 @@
         </ul>
       </nav>
       <div class="l-footer__logo">©START</div>
+      </div>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"

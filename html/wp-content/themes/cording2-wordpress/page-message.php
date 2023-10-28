@@ -23,7 +23,7 @@
         </div>
         <div class="p-message__box">
             <img src="<?php bloginfo('template_url'); ?>/img/ceo.png" alt="ceo" class="p-message__box__img" />
-          <div class="p-messege__box__description">
+          <div class="p-message__box__description">
             <p>
               はじめまして。代表取締役社長のショーン・デイビット・ジュニアです。
               <br />私はそこそこ幸せです。それは仕事が楽しいからです。もちろん仕事イコール人生ではありません。でも仕事は人生の大事な基盤のように思っています。
@@ -49,5 +49,9 @@
     <div class="p-message__under-img-wrapper">
       <img src="<?php bloginfo('template_url'); ?>/img/office.png" alt="office"  class="p-message__under-img"/>
     </div>
+
+    <script>
+    document.querySelector('.l-header__message-link').classList.add('l-header__link--active');  
+</script>
 
 <?php get_footer(); ?>

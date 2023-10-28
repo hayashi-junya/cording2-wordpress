@@ -6,15 +6,34 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+  @include mq("sp"){
+    padding: 20px 20px;
+    height: 60px;
+    width: 100%;
+  }
+
 }
 
 .l-header__link {
   text-decoration: none;
-  color: #151515;
+  color: $main-color;
+
+  @include mq("sp"){
+    color: $accent-color;
+  }
 }
 
-.l-header__link--select {
-  color: #dd1b57 !important;
+.l-header__link:hover{
+  color: $base-color;
+}
+
+.l-header__link--active {
+  color: $base-color!important;
+
+  @include mq("sp"){
+    color: #ef90a4 !important;
+  }
 }
 
 
@@ -22,53 +41,45 @@
   list-style: none;
   padding-left: 30px;
   font-weight: bold;
+
+  @include mq("sp"){
+    padding-bottom: 28px;
+    padding-left: 50px;
+  }
 }
 
 .l-header__list {
   display: flex;
+
+  @include mq("sp"){
+    flex-direction: column;
+    margin-top: 90px;
+  }
 }
 
-@media screen and (max-width: 767px) {
-  .l-header {
-    padding: 20px 20px;
-    height: 60px;
-    width: 100%;
-  }
 
   .l-header__logo {
-    width: 107px;
+    @include mq("sp"){
+      width: 107px;
+    }
   }
 
   .l-header__nav {
+    @include mq("sp"){
     position: fixed;
     top: 0;
     right: -100%;
     z-index: 5;
     width: 180px;
     height: 100vh;
-    background-color: #dd1b57;
+    background-color: $base-color;
     transition: right 0.5s;
   }
-
-  .l-header__list {
-    flex-direction: column;
-    margin-top: 90px;
-  }
-
-  .l-header__item {
-    padding-bottom: 28px;
-    padding-left: 50px;
-  }
-
-  .l-header__link {
-    color: white;
-  }
-
-  .l-header__link--select {
-    color: #ef90a4 !important;
-  }
+}
 
   .open .l-header__nav {
+    @include mq("sp"){
     right: 0;
   }
 }
+ 

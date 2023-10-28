@@ -1,16 +1,24 @@
 .p-service {
   margin-top: 15px;
   margin-bottom: 100px;
-  padding: 0 30px;
+  @include mq("sp"){
+    margin: 0;
+    overflow-x: hidden;
+  }
 }
 
 .p-service__inner {
   position: relative;
+  @include mq("sp"){}
 }
 
 .p-service__title {
   padding-top: 80px;
   padding-bottom: 50px;
+  @include mq("sp"){
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
 }
 
 .p-service__content::before {
@@ -24,25 +32,40 @@
   font-weight: bold;
   color: #f2f2f2;
   line-height: 1;
+  @include mq("sp"){
+    top: 40px;
+    right: -30px;
+    font-size: 70px;
+  }
 }
 
 .p-service__cards {
   display: flex;
   justify-content: space-between;
+  @include mq("sp"){
+    display: block;
+  }
 }
 
 .p-service__card {
   max-width: 350px;
   width: 30%;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: $accent-color;
   box-shadow: 0 3px 21px rgba(0, 0, 0, 0.16);
   padding: 50px;
+  @include mq("sp"){
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 40px 30px;
+  }
 }
 
 .p-service__card-link {
   text-decoration: none;
-  color: #151515;
+  color: $main-color;
+  @include mq("sp"){}
 }
 .p-service__card__title {
   margin-top: 5px;
@@ -50,58 +73,24 @@
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+  @include mq("sp"){
+    font-size: 16px;
+  }
 }
 
 .p-service__card__img-area {
   text-align: center;
+  @include mq("sp"){}
 }
 
 .p-service-card__img {
   width: 48px;
+  @include mq("sp"){}
 }
 
 .p-service__card__description {
   font-size: 14px;
-}
-
-@media screen and (max-width: 767px) {
-  .p-service {
-    margin: 0px;
-    padding: 0 20px;
-    overflow-x: hidden;
-  }
-
-  .p-service__title {
-    padding-top: 60px;
-    padding-bottom: 10px;
-  }
-
-  .p-service__content::before {
-    top: 40px;
-    right: -30px;
-    z-index: -1;
-    font-size: 70px;
-    font-weight: bold;
-    color: #f2f2f2;
-    line-height: 1;
-  }
-
-  .p-service__cards {
-    display: block;
-  }
-
-  .p-service__card {
-    max-width: 800px;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 40px 30px;
-  }
-
-  .p-service__card__title {
-    font-size: 16px;
-  }
-
-  .p-service__card__description {
+  @include mq("sp"){
     font-size: 14px;
   }
 }

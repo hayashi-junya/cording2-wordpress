@@ -1,12 +1,10 @@
 .c-toggle-btn{
   display: none;
-}
 
-@media screen and (max-width: 767px) {
-  .c-toggle-btn {
+  @include mq("sp"){
     display: block;
     z-index: 15;
-    background-color: #dd1b57;
+    background-color: $base-color;
     height: 60px;
     width: 60px;
     position: absolute;
@@ -16,7 +14,10 @@
     cursor: pointer;
     transition: 0.3s;
   }
+}
 
+
+@include mq("sp"){
   .c-toggle-btn:hover {
     opacity: 1;
   }
@@ -26,11 +27,10 @@
     height: 2px;
     right: 15px;
     border-radius: 4px;
-    background-color: white;
+    background-color: $accent-color;
     position: absolute;
     transition: 0.3s;
   }
-
   .c-toggle-btn span:nth-child(1) {
     top: 20px;
   }
@@ -43,7 +43,7 @@
   }
   .open .c-toggle-btn span:nth-child(1) {
     top: 30px;
-    background: white;
+    background: $accent-color;
     transform: rotate(45deg);
   }
 
@@ -54,7 +54,7 @@
 
   .open .c-toggle-btn span:nth-child(3) {
     top: 30px;
-    background: white;
+    background: $accent-color;
     transform: rotate(-45deg);
   }
-}
+  }

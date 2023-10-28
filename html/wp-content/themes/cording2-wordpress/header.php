@@ -15,15 +15,15 @@
         <nav class="l-header__nav">
           <ul class="l-header__list">
             <li class="l-header__item">
-              <a class="l-header__link l-header__link--select" href="http://localhost:8080/"
+              <a class="l-header__link l-header__home-link" href="http://localhost:8080/"
                 >ホーム</a
               >
             </li>
             <li class="l-header__item">
-              <a class="l-header__link" href="http://localhost:8080/message/">メッセージ</a>
+              <a class="l-header__link l-header__message-link" href="http://localhost:8080/message/">メッセージ</a>
             </li>
             <li class="l-header__item">
-              <a class="l-header__link" href="http://localhost:8080/company/">会社概要</a>
+              <a class="l-header__link l-header__company-link" href="http://localhost:8080/company/">会社概要</a>
             </li>
           </ul>
         </nav>

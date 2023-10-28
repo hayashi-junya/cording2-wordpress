@@ -79,4 +79,9 @@
         </dl>
       </div>
     </section>
+
+    <script>
+    document.querySelector('.l-header__company-link').classList.add('l-header__link--active');  
+</script>
+
 <?php get_footer(); ?>

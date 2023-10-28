@@ -2,12 +2,11 @@
   width: 200px;
   white-space: nowrap;
   font-size: 40px;
-  color: #dd1b57;
+  color: $base-color;
   line-height: 1;
-} 
-
-@media screen and (max-width: 767px) {
-  .c-section-title {
+  font-weight: bold;
+  @include mq("sp"){
     font-size: 32px;
   }
-}
+} 
+
