@@ -104,7 +104,7 @@ docker-compose down
 
 #### DBのバックアップ
 ```
-docker-compose exec -T db mysqldump --no-tablespaces --single-transaction -u [DBユーザー名] --password='パスワード' wordpress > ./backup/$(date "+%Y-%m-%d-%H-%M").sql
+docker-compose exec -T db mysqldump --no-tablespaces --single-transaction -u wordpress --password='wordpress' wordpress > ./backup/$(date "+%Y-%m-%d-%H-%M").sql
 ```
 上記コマンドで、`./backup`ディレクトリ内にダンプファイルが作成される（**カレントディレクトリに注意!**）  
 このファイルも含めてコミットする  
